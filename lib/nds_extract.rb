@@ -30,6 +30,6 @@ def directors_totals(nds)
     row_index += 1
   end
   #return result
-  
-  puts pp nds
 end
+
+puts pp directors_database
