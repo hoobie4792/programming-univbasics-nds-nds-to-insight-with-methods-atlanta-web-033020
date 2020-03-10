@@ -5,11 +5,12 @@ require 'directors_database'
 # using director_data as input
 def gross_for_director(director_data)
   hash = {}
-  row_index = 0
+  index = 0
+  total = 0
   
-  while row_index < director_data.length do
-    
-    row_index += 1
+  while index < director_data.length do
+    total += director_data[:]
+    index += 1
   end
 end
 
@@ -21,7 +22,9 @@ def directors_totals(nds)
   result = {}
   
   while row_index < director_data.length do
-    resultgross_for_director
+    name = nds[:name]
+    result[name] = resultgross_for_director(nds[row_index])
     row_index += 1
   end
+  return result
 end
