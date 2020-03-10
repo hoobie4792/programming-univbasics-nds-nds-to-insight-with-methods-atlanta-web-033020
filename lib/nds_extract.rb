@@ -10,6 +10,7 @@ def gross_for_director(director_data)
   while row_index < director_data.length do
     
     row_index += 1
+  end
 end
 
 # Write a method that, given an NDS creates a new Hash
@@ -19,4 +20,8 @@ end
 def directors_totals(nds)
   result = {}
   
+  while row_index < director_data.length do
+    resultgross_for_director
+    row_index += 1
+  end
 end
